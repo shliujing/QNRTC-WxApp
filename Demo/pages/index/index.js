@@ -22,6 +22,7 @@ Page({
   onSubmit: function() {
     const value = this.data
     console.log('submit', value)
+
     const app = getApp()
     app.roomToken = undefined
     if (value.roomToken) {
