@@ -26,16 +26,16 @@ Page({
       app.url = value.url
     }
 
-    if (verifyUserId(value.userId)) {
-      wx.setStorageSync('userId', value.userId)
-    } else {
-      wx.showToast({
-        title: '用户名最少 3 个字符，并且只能包含字母、数字或下划线',
-        icon: 'none',
-        duration: 2000
-      })
-      return
-    }
+    // if (verifyUserId(value.userId)) {
+    //   wx.setStorageSync('userId', value.userId)
+    // } else {
+    //   wx.showToast({
+    //     title: '用户名最少 3 个字符，并且只能包含字母、数字或下划线',
+    //     icon: 'none',
+    //     duration: 2000
+    //   })
+    //   return
+    // }
 
     wx.navigateBack({ delta: 1 })
   },

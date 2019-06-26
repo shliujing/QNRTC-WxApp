@@ -65,7 +65,7 @@ export const checkPermission = () => {
         success(res) {
           const cameraAuthorized = res.cameraAuthorized
           const microphoneAuthorized = res.microphoneAuthorized
-      
+
           console.log('摄像头权限:' + cameraAuthorized)
           console.log('麦克风权限:' + microphoneAuthorized)
           if (cameraAuthorized === false ||  microphoneAuthorized === false) {

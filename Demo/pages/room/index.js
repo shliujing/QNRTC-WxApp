@@ -29,20 +29,20 @@ Page({
       this.initRoomWithToken(app.roomToken)
       return
     }
-    if (!verifyUserId(userid)) {
-      wx.redirectTo({
-        url: '/pages/index/index',
-        success: () => {
-          wx.hideToast()
-          wx.showToast({
-            title: '用户名最少 3 个字符，并且只能包含字母、数字或下划线',
-            icon: 'none',
-            duration: 2000
-          })
-        }
-      })
-      return;
-    }
+    // if (!verifyUserId(userid)) {
+    //   wx.redirectTo({
+    //     url: '/pages/index/index',
+    //     success: () => {
+    //       wx.hideToast()
+    //       wx.showToast({
+    //         title: '用户名最少 3 个字符，并且只能包含字母、数字或下划线',
+    //         icon: 'none',
+    //         duration: 2000
+    //       })
+    //     }
+    //   })
+    //   return;
+    // }
     if (!verifyRoomId(room)) {
       wx.redirectTo({
         url: '/pages/index/index',
@@ -239,7 +239,7 @@ Page({
       },
       fail: () => {
         wx.showToast({
-          title: '推流开始失败', 
+          title: '推流开始失败',
           icon: 'none',
         })
       },

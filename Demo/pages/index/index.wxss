@@ -1,14 +1,14 @@
 button.plain {
   margin-top: 120rpx;
-  color: #FAFAFA;
-  background-color: #34AADC;
+  color: #fafafa;
+  background-color: #34aadc;
   line-height: 50px;
   height: 50px;
   border-radius: 100px;
 }
 
 button.plain.button-hover {
-  color: #FAFAFA;
+  color: #fafafa;
   background-color: rgba(52, 170, 220, 0.808);
 }
 
@@ -22,4 +22,29 @@ button.plain.button-hover {
   height: 24px;
   position: absolute;
   right: 0;
+}
+
+.login {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.loginbtn {
+  margin-top: 350rpx;
+  width: 70%;
+  background-color: #50A7DC;
+  color: #fff;
+  text-align: center;
+  font-size: 35rpx;
+  border-radius: 50rpx;
+      height: 100rpx;
+    line-height: 100rpx;
+
 }

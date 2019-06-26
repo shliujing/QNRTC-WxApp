@@ -1,12 +1,18 @@
 <main>
+
+<view class="container" wx:if="{{login}}">
+  <button bindgetuserinfo="updateUserInfo" class="loginbtn" openType="getUserInfo">微信登录</button>
+</view>
+
+<view class="container" wx:if="{{!login}}">
   <view class="right">
     <navigator
       url="/pages/setting/index"
     >
-      <!-- <image src="../../assets/icons/setting.png" mode="aspectFit"></image> -->
     </navigator>
   </view>
-  <input name="userId" type="text" placeholder-class="input-placeholder"
+
+  <input name="userId" type="text" disabled="disabled" placeholder-class="input-placeholder"
     maxlength="50" placeholder="用户，必填"
     bindinput="onUserIdInput" value="{{userId}}"
   />
@@ -15,4 +21,5 @@
     bindinput="onRoomNameInput" value="{{roomName}}"
   />
   <button class="plain" bind:tap="onSubmit">进入房间</button>
+  </view>
 </main>
